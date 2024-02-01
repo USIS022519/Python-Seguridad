@@ -1,0 +1,14 @@
+import string
+import random
+
+#Aqui establecemos el tamaño de la contraseña
+tamaño = int(input("ingrese el tamaño de la contra: "))
+
+#Genera los caracteres para usar en la contraseña
+caracteres = string.ascii_letters + string.digits + string.punctuation
+
+#Genera aleatoriamente la contraseña con el tamaño indicado
+contra = "".join(random.choice(caracteres) for i in range(tamaño))
+
+#Nos imprime la contraseña
+print("La contraseña generada es: " + contra)
